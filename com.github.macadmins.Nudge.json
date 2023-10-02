@@ -5,11 +5,11 @@
             "requiredMinimumOSVersion": "14.99.1"
         }
     ],
-    "userInterface": {
+   "userInterface": {
         "updateElements": [
             {
                 "_language": "en",
-                "subHeader": "DTS Testing: A friendly reminder from your local IT team"
+                "subHeader": "A friendly reminder from your local IT team"
             }
         ]
     }
