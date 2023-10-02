@@ -5,4 +5,10 @@
             "requiredMinimumOSVersion": "14.99.1",
         }
     ]
+    "userInterface": {
+        "updateElements": [
+            "_language": "en",
+            "subHeader": "DTS Testing: A friendly reminder from your local IT team"
+        ]
+    }
 }
