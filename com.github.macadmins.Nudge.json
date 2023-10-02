@@ -2,7 +2,7 @@
     "osVersionRequirements": [
         {
             "requiredInstallationDate": "2023-12-28T00:00:00Z",
-            "requiredMinimumOSVersion": "14.99.1",
+            "requiredMinimumOSVersion": "14.99.1"
         }
     ]
     "userInterface": {
