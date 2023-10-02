@@ -7,8 +7,10 @@
     ]
     "userInterface": {
         "updateElements": [
-            "_language": "en",
-            "subHeader": "DTS Testing: A friendly reminder from your local IT team"
+            {
+                "_language": "en",
+                "subHeader": "DTS Testing: A friendly reminder from your local IT team"
+            }
         ]
     }
 }
