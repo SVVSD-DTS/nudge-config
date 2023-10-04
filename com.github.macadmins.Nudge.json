@@ -1,10 +1,32 @@
 {
+    "optionalFeatures": {
+        "asynchronousSoftwareUpdate": false
+    },
     "osVersionRequirements": [
         {
             "requiredInstallationDate": "2024-01-01T00:00:00Z",
             "requiredMinimumOSVersion": "14.0"
         }
     ],
+    "userExperience": {
+        "allowUserQuitDeferrals": true,
+        "allowedDeferrals": 1000000,
+        "allowedDeferralsUntilForcedSecondaryQuitButton": 14,
+        "approachingRefreshCycle": 6000,
+        "approachingWindowTime": 72,
+        "elapsedRefreshCycle": 300,
+        "imminentRefreshCycle": 600,
+        "imminentWindowTime": 24,
+        "initialRefreshCycle": 18000,
+        "maxRandomDelayInSeconds": 1200,
+        "noTimers": false,
+        "nudgeRefreshCycle": 60,
+        "randomDelay": false,
+        "allowGracePeriods": true,
+        "gracePeriodInstallDelay": 4,
+        "gracePeriodLaunchDelay": 1,
+        "gracePeriodPath": "/private/var/db/.AppleSetupDone"
+  }
    "userInterface": {
         "updateElements": [
             {
