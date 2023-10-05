@@ -1,7 +1,7 @@
 {
    "optionalFeatures":{
       "asynchronousSoftwareUpdate":false,
-      "attemptToFetchMajorUpgrade":true
+      "attemptToFetchMajorUpgrade":false
    },
    "osVersionRequirements":[
       {
