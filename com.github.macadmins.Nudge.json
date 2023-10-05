@@ -5,6 +5,7 @@
    },
    "osVersionRequirements":[
       {
+         "actionButtonPath": "jamfselfservice://content?entity=policy&id=5026&action=execute",
          "requiredInstallationDate":"2024-01-01T00:00:00Z",
          "requiredMinimumOSVersion":"14.0"
       }
