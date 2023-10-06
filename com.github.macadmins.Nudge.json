@@ -6,10 +6,13 @@
    "osVersionRequirements":[
       {
          "actionButtonPath": "jamfselfservice://content?entity=policy&id=5026&action=view",
-         "requiredInstallationDate":"2024-01-01T00:00:00Z",
+         "requiredInstallationDate":"2023-11-01T00:00:00Z",
          "requiredMinimumOSVersion":"14.0"
       }
    ],
+   "userExperience": {
+       "allowedDeferrals":5
+   },
    "userInterface":{
       "updateElements":[
          {
