@@ -5,7 +5,7 @@
 #                    Author : La Clémentine · https://medium.com/@laclementine/
 #				 Updated by : Edward Lewis · lewis_edward@svvsd.org
 #                   Created : 2023-09-03
-#             Last Modified : 2023-09-27
+#             Last Modified : 2023-10-10
 #                   Version : 1.1
 #               Tested with : macOS 14.0
 #
@@ -55,7 +55,7 @@ elif [ "$uptime_days" -ge 11 ] && [ "$uptime_days" -le 13 ]; then
  launchctl asuser "$USER_ID" sudo -u "$CURRENT_USER" /usr/local/bin/dialog \
  --title "Restart required" \
  --message "**${uptime_days} days without a reboot!** \n\nYour Mac needs to restart so it can regain its original performance. Important security updates may also be installed during the process. Please save your work and press Restart. If you press Defer, you'll be reminded again in 24 hours.\n\nPlease note that if the timer reaches zero, your computer will be automatically restarted. Thank you for your cooperation." \
- --icon "https://i.imgur.com/crrUCrM.png" \
+ --icon "https://sw-dist.svvsd.org/v1/icons/vrainstorm-512.png" \
  --button1text "Restart now" \
  --button2text "Defer" \
  --timer 840 \
@@ -74,7 +74,7 @@ elif [ "$uptime_days" -ge 14 ]; then
  launchctl asuser "$USER_ID" sudo -u "$CURRENT_USER" /usr/local/bin/dialog \
  --title "Restart required" \
  --message "**${uptime_days} days without a reboot!** \n\nYour Mac needs to restart so it can regain its original performance. Important security updates may also be installed during the process.\n\n**After pressing I understand, you will have 10 minutes to restart your computer.**" \
- --icon "https://i.imgur.com/crrUCrM.png" \
+ --icon "https://sw-dist.svvsd.org/v1/icons/vrainstorm-512.png" \
  --button1text "I understand" \
  --width 650 --height 230 \
  --messagefont size=13 \
