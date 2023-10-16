@@ -68,8 +68,9 @@ elif [ "$uptime_days" -ge 11 ] && [ "$uptime_days" -le 13 ]; then
 
 elif [ "$uptime_days" -ge 14 ]; then
  echo "Uptime greater than 14 days. Last warning dialog."
- osascript -e "set volume output volume 80 --100%"
- afplay "/System/Library/Sounds/Sosumi.aiff" & sleep 0.2 && afplay "/System/Library/Sounds/Sosumi.aiff" & sleep 0.4 && afplay "/System/Library/Sounds/Sosumi.aiff" &
+ # Commented out turning sound on and alert
+ # osascript -e "set volume output volume 80 --100%"
+ # afplay "/System/Library/Sounds/Sosumi.aiff" & sleep 0.2 && afplay "/System/Library/Sounds/Sosumi.aiff" & sleep 0.4 && afplay "/System/Library/Sounds/Sosumi.aiff" &
 
  launchctl asuser "$USER_ID" sudo -u "$CURRENT_USER" /usr/local/bin/dialog \
  --title "Restart required" \
