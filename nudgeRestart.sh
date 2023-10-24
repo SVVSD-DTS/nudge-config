@@ -5,7 +5,7 @@
 #                    Author : La Clémentine · https://medium.com/@laclementine/
 #				 Updated by : Edward Lewis · lewis_edward@svvsd.org
 #                   Created : 2023-09-03
-#             Last Modified : 2023-10-10
+#             Last Modified : 2023-10-24
 #                   Version : 1.1
 #               Tested with : macOS 14.0
 #
@@ -46,12 +46,12 @@ elif [ "$uptime_days" -ge 7 ] && [ "$uptime_days" -le 10 ]; then
  --notification \
  --title "$uptime_days days without a reboot!" \
  --message "Your Mac needs to restart so it can regain its original performance. Important security updates may also be installed during the process."
- afplay "/System/Library/Sounds/Sosumi.aiff"
+ # afplay "/System/Library/Sounds/Sosumi.aiff"
  exit 0
 
 elif [ "$uptime_days" -ge 11 ] && [ "$uptime_days" -le 13 ]; then
  echo "Uptime between 11 and 13 days. Dialog."
- afplay "/System/Library/Sounds/Sosumi.aiff" &
+ # afplay "/System/Library/Sounds/Sosumi.aiff" &
  launchctl asuser "$USER_ID" sudo -u "$CURRENT_USER" /usr/local/bin/dialog \
  --title "Restart required" \
  --message "**${uptime_days} days without a reboot!** \n\nYour Mac needs to restart so it can regain its original performance. Important security updates may also be installed during the process. Please save your work and press Restart. If you press Defer, you'll be reminded again in 24 hours.\n\nPlease note that if the timer reaches zero, your computer will be automatically restarted. Thank you for your cooperation." \
