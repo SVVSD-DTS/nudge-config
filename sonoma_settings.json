@@ -11,7 +11,7 @@
       }
    ],
    "userExperience": {
-       "allowedDeferrals":5
+       "allowedDeferrals":10
    },
    "userInterface":{
       "updateElements":[
