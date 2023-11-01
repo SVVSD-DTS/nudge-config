@@ -1,7 +1,15 @@
 {
-   "optionalFeatures":{
-      "asynchronousSoftwareUpdate":false,
-      "attemptToFetchMajorUpgrade":false
+   "optionalFeatures":
+   {
+       "asynchronousSoftwareUpdate":false,
+       "attemptToFetchMajorUpgrade":false,
+       "acceptableAssertionApplicationNames": [
+          "Meeting Center",
+          "Webex"
+       ],
+      "acceptableAssertionUsage": true,
+      "acceptableCameraUsage": true,
+      "acceptableScreenSharingUsage": true
    },
    "osVersionRequirements":[
       {
