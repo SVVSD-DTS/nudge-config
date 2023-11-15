@@ -44,7 +44,7 @@ elif [ "$uptime_days" -ge 7 ] && [ "$uptime_days" -le 10 ]; then
  echo "Uptime between 7 and 10 days. Notification."
  launchctl asuser "$USER_ID" sudo -u "$CURRENT_USER" /usr/local/bin/dialog \
  --notification \
- --title "$uptime_days days without a reboot!" \
+ --title "$uptime_days days without a restart!" \
  --message "Your Mac needs to restart so it can regain its original performance. Important security updates may also be installed during the process."
  # afplay "/System/Library/Sounds/Sosumi.aiff"
  exit 0
@@ -54,7 +54,7 @@ elif [ "$uptime_days" -ge 11 ] && [ "$uptime_days" -le 13 ]; then
  # afplay "/System/Library/Sounds/Sosumi.aiff" &
  launchctl asuser "$USER_ID" sudo -u "$CURRENT_USER" /usr/local/bin/dialog \
  --title "Restart required" \
- --message "**${uptime_days} days without a reboot!** \n\nYour Mac needs to restart so it can regain its original performance. Important security updates may also be installed during the process. Please save your work and press Restart. If you press Defer, you'll be reminded again in 24 hours.\n\nPlease note that if the timer reaches zero, your computer will be automatically restarted. Thank you for your cooperation." \
+ --message "**${uptime_days} days without a restart!** \n\nYour Mac needs to restart so it can regain its original performance. Important security updates may also be installed during the process. Please save your work and press Restart. If you press Defer, you'll be reminded again in 24 hours.\n\nPlease note that if the timer reaches zero, your computer will be automatically restarted. Thank you for your cooperation." \
  --icon "https://sw-dist.svvsd.org/v1/icons/vrainstorm-512.png" \
  --button1text "Restart now" \
  --button2text "Defer" \
@@ -74,7 +74,7 @@ elif [ "$uptime_days" -ge 14 ]; then
 
  launchctl asuser "$USER_ID" sudo -u "$CURRENT_USER" /usr/local/bin/dialog \
  --title "Restart required" \
- --message "**${uptime_days} days without a reboot!** \n\nYour Mac needs to restart so it can regain its original performance. Important security updates may also be installed during the process.\n\n**After pressing I understand, you will have 10 minutes to restart your computer.**" \
+ --message "**${uptime_days} days without a restart!** \n\nYour Mac needs to restart so it can regain its original performance. Important security updates may also be installed during the process.\n\nAfter pressing **I understand**, you will have 10 minutes to restart your computer." \
  --icon "https://sw-dist.svvsd.org/v1/icons/vrainstorm-512.png" \
  --button1text "I understand" \
  --width 650 --height 230 \
