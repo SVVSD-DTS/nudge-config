@@ -15,7 +15,7 @@
       {
          "actionButtonPath": "jamfselfservice://content?entity=policy&id=5026&action=view",
          "requiredInstallationDate":"2024-01-01T00:00:00Z",
-         "requiredMinimumOSVersion":"14.1.1"
+         "requiredMinimumOSVersion":"14.2"
       }
    ],
    "userExperience": {
