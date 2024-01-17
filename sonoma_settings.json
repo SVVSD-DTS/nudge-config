@@ -27,6 +27,7 @@
        "gracePeriodPath": "/private/var/db/.AppleSetupDone"
    },
    "userInterface":{
+      "showDeferralCount": false,
       "updateElements":[
          {
             "_language":"en",
