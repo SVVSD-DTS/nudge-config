@@ -16,6 +16,12 @@
          "actionButtonPath": "jamfselfservice://content?entity=policy&id=5026&action=view",
          "requiredInstallationDate":"2024-03-01T00:00:00Z",
          "requiredMinimumOSVersion":"14.3"
+         "aboutUpdateURLs": [
+            {
+               "_language": "en",
+               "aboutUpdateURL": "https://svvsd.service-now.com/esc?id=kb_article&sysparm_article=KB0010450"
+            }
+         ]
       }
    ],
    "userExperience": {
