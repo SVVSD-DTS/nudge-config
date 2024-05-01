@@ -21,8 +21,7 @@
    ],
    "userExperience": {
        "allowUserQuitDeferrals": false,
-       "allowedDeferrals":20,
-       "allowGracePeriods": true
+       "allowedDeferrals":20
    },
    "userInterface":{
       "showDeferralCount": false,
