@@ -13,10 +13,10 @@
    },
    "osVersionRequirements":[
       {
+         "aboutUpdateURL": "https://svvsd.service-now.com/esc?id=kb_article&sysparm_article=KB0010450",
          "actionButtonPath": "jamfselfservice://content?entity=policy&id=5026&action=view",
          "requiredInstallationDate":"2024-05-01T15:00:00Z",
-         "requiredMinimumOSVersion":"13.5",
-         "aboutUpdateURL": "https://svvsd.service-now.com/esc?id=kb_article&sysparm_article=KB0010450"
+         "requiredMinimumOSVersion":"13.5"
       }
    ],
    "userExperience": {
