@@ -25,7 +25,8 @@
        "allowGracePeriods": true,
        "gracePeriodInstallDelay": 4,
        "gracePeriodLaunchDelay": 1,
-       "gracePeriodPath": "/private/var/db/.AppleSetupDone"
+       "gracePeriodPath": "/private/var/db/.AppleSetupDone",
+       "randomDelay": false
    },
    "userInterface":{
       "showDeferralCount": false,
