@@ -26,7 +26,8 @@
        "gracePeriodInstallDelay": 4,
        "gracePeriodLaunchDelay": 1,
        "gracePeriodPath": "/private/var/db/.AppleSetupDone",
-       "randomDelay": false
+       "randomDelay": false,
+       "allowMovableWindow": true
    },
    "userInterface":{
       "showDeferralCount": false,
