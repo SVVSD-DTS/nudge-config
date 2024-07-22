@@ -15,7 +15,7 @@
       {
          "actionButtonPath": "jamfselfservice://content?entity=policy&id=5026&action=view",
          "requiredInstallationDate":"2024-08-01T16:00:00Z",
-         "requiredMinimumOSVersion":"99.0",
+         "requiredMinimumOSVersion":"14.99",
          "aboutUpdateURL": "https://svvsd.service-now.com/esc?id=kb_article&sysparm_article=KB0010450"
       }
    ],
