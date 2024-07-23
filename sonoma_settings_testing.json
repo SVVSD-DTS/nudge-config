@@ -10,7 +10,8 @@
       "acceptableAssertionUsage": true,
       "acceptableCameraUsage": true,
       "acceptableScreenSharingUsage": true,
-      "aggressiveUserFullScreenExperience": false
+      "aggressiveUserFullScreenExperience": false,
+      "aggressiveUserExperience": false
    },
    "osVersionRequirements":[
       {
