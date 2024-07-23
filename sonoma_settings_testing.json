@@ -9,7 +9,8 @@
        ],
       "acceptableAssertionUsage": true,
       "acceptableCameraUsage": true,
-      "acceptableScreenSharingUsage": true
+      "acceptableScreenSharingUsage": true,
+      "aggressiveUserFullScreenExperience": false
    },
    "osVersionRequirements":[
       {
