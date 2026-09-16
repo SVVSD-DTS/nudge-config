@@ -1,4 +1,4 @@
-{
+e{
     "PayloadContent": [
         {
             "NotificationSettings": [
@@ -35,7 +35,7 @@
                                     "acceptableAssertionUsage": true,
                                     "acceptableCameraUsage": true,
                                     "acceptableScreenSharingUsage": true,
-                                    "attemptToFetchMajorUpgrade": true,
+                                    "attemptToFetchMajorUpgrade": false,
                                     "disableSoftwareUpdateWorkflow": false
                                 },
                                 "osVersionRequirements": [
