@@ -1,100 +1,56 @@
 {
-  "PayloadDescription": "Newest .json configs, adjusting from previous version to include deadlines, action button/link, help info, and SVVSD branding accessory info",
-  "PayloadDisplayName": "Nudge macOS 27 Golden Gate",
-  "PayloadUUID": "D323C1C3-E289-4A71-A1F9-52F7B3668A09",
-  "PayloadType": "Configuration",
-  "PayloadEnabled": true,
-  "PayloadRemovalDisallowed": true,
-  "PayloadScope": "System",
-  "PayloadContent": [
-    {
-      "PayloadVersion": 1,
-      "PayloadDisplayName": "Notifications Payload",
-      "PayloadUUID": "BC1517FB-F5F8-48EA-B30D-BA6DB6B6B469",
-      "PayloadType": "com.apple.notificationsettings",
-      "NotificationSettings": [
-        {
-          "BadgesEnabled": true,
-          "ShowInLockScreen": true,
-          "AlertType": 2,
-          "CriticalAlertEnabled": true,
-          "SoundsEnabled": true,
-          "BundleIdentifier": "com.github.macadmins.Nudge",
-          "ShowInNotificationCenter": true,
-          "NotificationsEnabled": true
-        }
-      ],
-      "PayloadIdentifier": "C4313DE3-F8C6-4DB7-BEEE-7CFEEFB426A7",
-      "PayloadOrganization": "JAMF Software"
-    },
-    {
-      "PayloadUUID": "E50F95DD-4C3F-415F-A034-A1600123C340",
-      "PayloadDisplayName": "Custom Settings",
-      "PayloadType": "com.apple.ManagedClient.preferences",
-      "PayloadContent": {
-        "com.github.macadmins.Nudge": {
-          "Forced": [
-            {
-              "mcx_preference_settings": {
-                "optionalFeatures": {
-                  "acceptableAssertionApplicationNames": [
-                    "zoom.us",
-                    "MSTeams",
-                    "CiscoWebex-placeholder"
-                  ],
-                  "disableSoftwareUpdateWorkflow": false,
-                  "acceptableAssertionUsage": true,
-                  "acceptableScreenSharingUsage": true,
-                  "acceptableCameraUsage": true,
-                  "attemptToFetchMajorUpgrade": false
-                },
-                "userInterface": {
-                  "showDeferralCount": true,
-                  "actionButtonPath": "jamfselfservice://content?entity=policy&id=5105&action=execute",
-                  "activelyExploitedCVEsLabel": "Security Issues Resolved:",
-                  "showActivelyExploitedCVEsAsCount": true,
-                  "showRequiredDate": true,
-                  "showRequiredOSVersion": true,
-                  "showDaysRemainingToUpdate": true,
-                  "iconLightPath": "/Library/Management/SVVSD/Chop-logo-with-tagline.png",
-                  "iconDarkPath": "/Library/Management/SVVSD/Chop-logo-with-tagline.png",
-                  "updateElements": [
-                    {
-                      "mainHeader": "Your computer needs an important update",
-                      "actionButtonText": "Upgrade macOS",
-                      "_language": "en",
-                      "mainContentHeader": "**Your device will restart during this update. Please save your work and close all open applications**",
-                      "mainContentSubHeader": "----------------------------------------------------------",
-                      "subHeader": "",
-                      "mainContentText": "Save your work and **shutdown all open applications** before you continue.\\n\\nThis update may take up to **60 minutes or more**, depending on your network connection.\\n\\nIf you click the **Hide** button, the window will close, but the **installation will continue running in the background.**\\n\\nIf you have any issues or need assistance, contact the Help Desk at **303-702-7730** or email **helpdesk@svvsd.org**. They are available Monday-Friday, 7:00 AM-4:00 PM.",
-                      "mainContentNote": "**Important Notes**"
-                    }
-                  ]
-                },
-                "osVersionRequirements": [
-                  {
-                    "requiredInstallationDate": "2026-10-15T13:00:00Z",
-                    "actionButtonPath": "jamfselfservice://content?entity=policy&id=5105&action=execute",
-                    "requiredMinimumOSVersion": "27.0"
-                  }
-                ],
-                "userExperience": {
-                  "imminentWindowTime": 24,
-                  "randomDelay": false,
-                  "approachingWindowTime": 72,
-                  "allowedDeferrals": 100
-                }
-              }
-            }
-          ]
-        }
-      },
-      "PayloadIdentifier": "E50F95DD-4C3F-415F-A034-A1600123C340",
-      "PayloadOrganization": "JAMF Software",
-      "PayloadVersion": 1
-    }
-  ],
-  "PayloadIdentifier": "D323C1C3-E289-4A71-A1F9-52F7B3668A09",
-  "PayloadVersion": 1,
-  "PayloadOrganization": "St. Vrain Valley School District"
+   "optionalFeatures":
+   {
+       "asynchronousSoftwareUpdate":false,
+       "attemptToFetchMajorUpgrade":false,
+       "acceptableAssertionApplicationNames": [
+          "Meeting Center",
+          "Webex"
+       ],
+      "acceptableAssertionUsage": true,
+      "acceptableCameraUsage": true,
+      "acceptableScreenSharingUsage": true
+   },
+   "osVersionRequirements":[
+      {
+         "actionButtonPath": "jamfselfservice://content?entity=policy&id=5105&action=execute",
+         "requiredInstallationDate":"2026-10-30T16:00:00Z",
+         "requiredMinimumOSVersion":"27.0"
+      }
+   ],
+   "userExperience": {
+       "allowUserQuitDeferrals": true,
+       "allowedDeferrals":100,
+       "allowGracePeriods": true,
+       "gracePeriodInstallDelay": 4,
+       "gracePeriodLaunchDelay": 1,
+       "gracePeriodPath": "/private/var/db/.AppleSetupDone",
+       "randomDelay": false,
+       "approachingWindowTime": 72,
+       "imminentWindowTime": 24,
+       "allowMovableWindow": true
+   },
+   "userInterface":{
+      "actionButtonPath": "jamfselfservice://content?entity=policy&id=5105&action=execute",
+      "activelyExploitedCVEsLabel": "Security Issues Resolved:",
+      "iconDarkPath": "/Library/Management/SVVSD/Chop-logo-with-tagline.png",
+      "iconLightPath": "/Library/Management/SVVSD/Chop-logo-with-tagline.png",
+      "showActivelyExploitedCVEsAsCount": true,
+      "showDaysRemainingToUpdate": true,
+      "showDeferralCount": true,
+      "showRequiredDate": true,
+      "showRequiredOSVersion": true,
+      "updateElements":[
+         {
+            "_language":"en",
+            "actionButtonText": "Upgrade macOS",
+            "mainContentHeader": "**Your device will restart during this update. Please save your work and close all open applications**",
+            "mainContentNote": "**Important Notes**",
+            "mainContentSubHeader": "----------------------------------------------------------",
+            "mainContentText": "Save your work and **shutdown all open applications** before you continue.\n\nThis update may take up to **60 minutes or more**, depending on your network connection.\n\nIf you click the **Hide** button, the window will close, but the **installation will continue running in the background.**\n\nIf you have any issues or need assistance, contact the Help Desk at **303-702-7730** or email **helpdesk@svvsd.org**. They are available Monday-Friday, 7:00 AM-4:00 PM.",
+            "mainHeader": "Your computer needs an important update",
+            "subHeader": ""
+         }
+      ]
+   }
 }
