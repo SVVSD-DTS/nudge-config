@@ -78,7 +78,7 @@
                         }
                     ]
                 }
-            ],
+            
             "PayloadDisplayName": "Custom Settings",
             "PayloadIdentifier": "E50F95DD-4C3F-415F-A034-A1600123C340",
             "PayloadOrganization": "JAMF Software",
@@ -86,7 +86,7 @@
             "PayloadUUID": "E50F95DD-4C3F-415F-A034-A1600123C340",
             "PayloadVersion": 1
         }
-    ],
+    
     "PayloadDescription": "Newest .json configs, adjusting from previous version to include deadlines, action button/link, help info, and SVVSD branding accessory info",
     "PayloadDisplayName": "Nudge macOS 27 Golden Gate",
     "PayloadEnabled": true,
