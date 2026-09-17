@@ -13,38 +13,43 @@
    },
    "osVersionRequirements":[
       {
-         "actionButtonPath": "selfservicecapability://content?entity=policy&id=5046&action=view",
-         "requiredInstallationDate":"2026-09-01T16:00:00Z",
-         "requiredMinimumOSVersion":"26.6",
-         "aboutUpdateURL": "https://svvsd.service-now.com/esc?id=kb_article&sysparm_article=KB0011328"
+         "actionButtonPath": "jamfselfservice://content?entity=policy&id=5105&action=execute",
+         "requiredInstallationDate":"2026-10-30T16:00:00Z",
+         "requiredMinimumOSVersion":"27.0"
       }
    ],
    "userExperience": {
-       "allowUserQuitDeferrals": false,
-       "allowedDeferrals":20,
+       "allowUserQuitDeferrals": true,
+       "allowedDeferrals":100,
        "allowGracePeriods": true,
        "gracePeriodInstallDelay": 4,
        "gracePeriodLaunchDelay": 1,
        "gracePeriodPath": "/private/var/db/.AppleSetupDone",
        "randomDelay": false,
+       "approachingWindowTime": 72,
+       "imminentWindowTime": 24,
        "allowMovableWindow": true
    },
    "userInterface":{
-      "showDeferralCount": false,
+      "actionButtonPath": "jamfselfservice://content?entity=policy&id=5105&action=execute",
+      "activelyExploitedCVEsLabel": "Security Issues Resolved:",
+      "iconDarkPath": "/Library/Management/SVVSD/Chop-logo-with-tagline.png",
+      "iconLightPath": "/Library/Management/SVVSD/Chop-logo-with-tagline.png",
+      "showActivelyExploitedCVEsAsCount": true,
+      "showDaysRemainingToUpdate": true,
+      "showDeferralCount": true,
+      "showRequiredDate": true,
+      "showRequiredOSVersion": true,
       "updateElements":[
          {
             "_language":"en",
-            "actionButtonText":"Update Device",
-            "informationButtonText":"More Info",
-            "mainContentHeader":"Your device will restart during this update",
-            "mainContentNote":"Important Notes",
-            "mainContentSubHeader":"Updates can take around 30-60 minutes to complete",
-            "mainContentText":"A fully up-to-date device is required to ensure that IT can accurately protect your device.\n\nIf you do not update your device, you may lose access to some items necessary for your day-to-day tasks.\n\nTo begin the update, please close all open applications, then click on the Update Device button and follow the provided steps.\n\nInstallation of the latest macOS version can be run directly from Self Service any time.",
-            "mainHeader":"Your device requires a security update",
-            "oneDayDeferralButtonText":"One Day",
-            "primaryQuitButtonText":"Later",
-            "secondaryQuitButtonText":"I understand",
-            "subHeader":"A friendly reminder from your St Vrain District Technology Team!"
+            "actionButtonText": "Upgrade macOS",
+            "mainContentHeader": "**Your device will restart during this update. Please save your work and close all open applications**",
+            "mainContentNote": "**Important Notes**",
+            "mainContentSubHeader": "----------------------------------------------------------",
+            "mainContentText": "Save your work and **shutdown all open applications** before you continue.\n\nThis update may take up to **60 minutes or more**, depending on your network connection.\n\nIf you click the **Hide** button, the window will close, but the **installation will continue running in the background.**\n\nIf you have any issues or need assistance, contact the Help Desk at **303-702-7730** or email **helpdesk@svvsd.org**. They are available Monday-Friday, 7:00 AM-4:00 PM.",
+            "mainHeader": "Your computer needs an important update",
+            "subHeader": ""
          }
       ]
    }
