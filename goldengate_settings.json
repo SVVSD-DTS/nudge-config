@@ -5,6 +5,8 @@
        "attemptToFetchMajorUpgrade":false,
        "acceptableAssertionApplicationNames": [
           "Meeting Center",
+          "MSTeams",
+          "zoom.us",
           "Webex"
        ],
       "acceptableAssertionUsage": true,
@@ -14,7 +16,7 @@
    "osVersionRequirements":[
       {
          "actionButtonPath": "jamfselfservice://content?entity=policy&id=5105&action=execute",
-         "requiredInstallationDate":"2026-10-23T16:00:00Z",
+         "requiredInstallationDate":"2026-10-26T16:00:00Z",
          "requiredMinimumOSVersion":"27.0"
       }
    ],
