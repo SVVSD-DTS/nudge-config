@@ -35,8 +35,8 @@
    "userInterface":{
       "actionButtonPath": "jamfselfservice://content?entity=policy&id=5105&action=execute",
       "activelyExploitedCVEsLabel": "Security Issues Resolved:",
-      "iconDarkPath": "/Library/Application Support/SVVSD/Chop-logo-with-tagline.png",
-      "iconLightPath": "/Library/Application Support/SVVSD/Chop-logo-with-tagline.png",
+      "iconDarkPath": "/Library/Application Support/SVVSD/St-Vrain-chop_dark_100blk-1.png",
+      "iconLightPath": "/Library/Application Support/SVVSD/St-Vrain-chop_light_100blk-1.png",
       "showActivelyExploitedCVEsAsCount": true,
       "showDaysRemainingToUpdate": true,
       "showDeferralCount": true,
