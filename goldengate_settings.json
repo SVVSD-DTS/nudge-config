@@ -17,8 +17,8 @@
    "osVersionRequirements":[
       {
          "actionButtonPath": "jamfselfservice://content?entity=policy&id=5105&action=execute",
-         "requiredInstallationDate":"2026-10-31T16:00:00Z",
-         "requiredMinimumOSVersion":"27.0.1"
+         "requiredInstallationDate":"2026-11-06T16:00:00Z",
+         "requiredMinimumOSVersion":"27.2"
       }
    ],
    "userExperience": {
