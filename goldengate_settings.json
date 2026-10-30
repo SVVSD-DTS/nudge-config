@@ -3,6 +3,7 @@
    {
        "asynchronousSoftwareUpdate":false,
        "attemptToFetchMajorUpgrade":false,
+       "aggressiveUserFullScreenExperience":false,
        "acceptableAssertionApplicationNames": [
           "Meeting Center",
           "MSTeams",
